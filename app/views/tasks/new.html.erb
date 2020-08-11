@@ -1,8 +1,8 @@
 <h1> Create a Task: </h1>
 <%= simple_form_for(@task) do |f| %>
-  <%= f.text_field :title, placeholder: 'Title' %>
-  <%= f.text_field :details, placeholder: 'Details' %>
-  <%= f.submit %>
+  <%= f.input :title, placeholder: 'Title' %>
+  <%= f.input :details, placeholder: 'Details' %>
+  <input type="submit" class="btn btn-primary">
 <% end %>
 
 <br>

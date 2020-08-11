@@ -1,8 +1,10 @@
-<h1>Task: <%=@task.title %></h1>
-<p>Details: <%=@task.details %></p>
-<p>Completed: <%=check_box_tag @task.title, @task.title, @task.completed %></p>
 
-<h2><%= link_to 'Edit', edit_task_path(@task) %>
-<h2><%= link_to 'Homepage', tasks_path %>
-<h2><%= link_to 'Remove', task_path, method: :delete %>
+<div style="text-align: center">
+  <h1 style="margin-top: 50px;">Task: <%=@task.title %></h1>
+  <p>Details: <%=@task.details %></p>
+
+  <h2><%= link_to 'Edit', edit_task_path(@task), class: "btn btn-primary" %>
+  <h2><%= link_to 'Homepage', tasks_path, class: "btn btn-primary"%>
+  <h2><%= link_to 'Remove', task_path, method: :delet, class: "btn btn-primary"%>
+</div>
 
