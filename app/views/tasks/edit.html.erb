@@ -1,7 +1,7 @@
 <h1> Edit a Task: </h1>
-<%= simple_form_for(@task) do |f| %>
-  <%= f.text_field :title, placeholder: 'Title' %>
-  <%= f.text_field :details, placeholder: 'Details' %>
-  <%= f.check_box :completed %>
-  <%= f.submit %>
-<% end %>
+  <%= simple_form_for(@task) do |f| %>
+    <%= f.text_field :title, placeholder: 'Title' %>
+    <%= f.text_field :details, placeholder: 'Details' %>
+    <%= f.check_box :completed %>
+    <%= f.submit %>
+  <% end %>
