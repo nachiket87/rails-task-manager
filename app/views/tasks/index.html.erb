@@ -1,8 +1,9 @@
 <h1> My Tasks </h1>
+<script src="https://kit.fontawesome.com/40de9cf907.js" crossorigin="anonymous"></script>
 <ul>
 <% @tasks.each  do |task| %>
-  <li><%=check_box_tag task.completed, task.title, task.completed %><%= link_to task.title, task_path(task) %></li>
-
+  <li><%=check_box_tag task.completed, task.title, task.completed %> <%= link_to task.title, task_path(task) %> 
+  <%= link_to 'delete', task_path(task), method: :delete %></li>
 <% end %>
 <br>
 
